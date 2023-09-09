@@ -1,0 +1,63 @@
+---
+import profileImage from "../assets/img/alejandro-picture.jpg";
+import RrssIcon from "./RrssIcon.astro";
+import linkedinIcon from '../assets/img/logo-linkedin.png';
+import githubIcon from '../assets/img/logo-github.png';
+import twitterIcon from '../assets/img/logo-twitter.png';
+interface Props {}
+---
+
+<div class="container">
+  <img src={profileImage} class="img" alt="foto de perfil" />
+
+  <p>Aquí va la descripción</p>
+
+  <div class="icon-wrapper">
+    <RrssIcon icon={linkedinIcon} rrssUrl="https://www.linkedin.com/in/alejandro-moscard%C3%B3-vilar-10a970264/"/>
+    <RrssIcon icon={githubIcon} rrssUrl="https://github.com/A7OMICsp/"/>
+    <RrssIcon icon={twitterIcon} rrssUrl="https://twitter.com/alxxmv/"/>
+  </div>
+  
+  
+</div>
+
+<style>
+  :root {
+    --gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
+    padding: 59px;
+  }
+
+  .img {
+    width: 60vw;
+    height: 60vw !important;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 8px solid #fff;
+    box-shadow: 0 0 20px 0 #a88acf;
+  }
+
+  .icon-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 16px;
+
+  }
+</style>
