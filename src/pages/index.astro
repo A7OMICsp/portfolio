@@ -6,7 +6,9 @@ import Profile from "../components/Profile.astro";
 
 <Layout title="Alejandro's portfolio">
   <header class="header">
-    <h1 class="text-gradient text-2xl">&lt;Alejandro Moscardó /&gt;</h1>
+    <h1 class="header-text text-gradient text-2xl">
+      &lt;Alejandro Moscardó /&gt;
+    </h1>
   </header>
 
   <main>
@@ -143,12 +145,32 @@ import Profile from "../components/Profile.astro";
       font-size: 1.2rem;
       height: 21px;
     }
+
+    .container {
+      padding: 40px;
+    }
+
+    * {
+      font-size: 16px;
+    }
   }
 
   @media (max-width: 420px) {
     .welcome-text {
       font-size: 1rem;
       height: 18px;
+    }
+
+    .container {
+      padding: 32px;
+    }
+
+    * {
+      font-size: 14px;
+    }
+
+    .header-text {
+      font-size: 1.2rem !important;
     }
   }
 
