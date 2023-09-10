@@ -1,0 +1,36 @@
+<div class="skills-container">
+    <h2 style="color: white">Estas son mis skills</h2>
+</div>
+
+<style>
+    .skills-container{
+        width: 100%;
+        height: 120px;
+        background: var(--gradient);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 20px 0 #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        
+    }
+
+    .skills-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        background-color: #000000a9;
+        backdrop-filter: blur(5px);
+    }
+
+    h2 {
+        position: relative;
+        z-index: 10;
+        font-size: 24px;
+    }
+</style>
