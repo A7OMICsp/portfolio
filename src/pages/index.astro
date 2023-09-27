@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Profile from "../components/Profile.astro";
 import Skills from "../components/Skills.astro";
+import {skillsArray} from "../data/skills";
 ---
 
 <Layout title="Alejandro's portfolio">
@@ -40,7 +41,7 @@ import Skills from "../components/Skills.astro";
     </ul> -->
   </main>
 
-  <Skills/>
+  <Skills skills={skillsArray}/>
 
   <div class="spacer"></div>
 
